@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: teal;
+    margin: 0px; 
+    padding: 0px;
+}
+
+.heading-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.project-title {
+    display: flex;
+    width: max-content;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.user-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 18px;
+    background-color: lightgreen;
+    height: 40px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 512px;
+    margin: 0 auto;
+    padding: 10px;
+    /* Specifying height causes the flex-items to overflow out of the box. */
+    /* height: 512px; */
+    justify-content: flex-start;
+    align-content: flex-start; 
+    /* align-content is set to flex-start because flex-wrap creates gap between the items in flex-container */
+}
+
+.row-items {
+    display: flex;
+}
+
+.grid-items {
+    border: 2px solid black;
+    width: 32px;
+    height: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
